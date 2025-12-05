@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KenEdu Studio - Boceto de Actividad</title>
+  <meta name="description" content="Boceto digital y simulación de publicación - actividad 6">
+
+  <style>
+    :root{
+      --bg: #e3f2fd;
+      --card: #ffffff;
+      --accent: #4f46e5;
+      --muted: #6b7280;
+      --radius: 12px;
+      --container: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111;line-height:1.5}
+    .container{max-width:var(--container);margin:0 auto;padding:0 20px}
+    
+    header{width:100%;margin:0;background:var(--bg);backdrop-filter:blur(4px);position:sticky;top:0;z-index:40;box-shadow:0 1px 6px rgba(15,23,42,0.06);padding-left:24px;padding-right:24px}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo .mark{width:36px;height:36px;border-radius:8px;background:var(--accent);display:inline-flex;align-items:center;justify-content:center;color:white;font-size:16px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:10px;text-decoration:none}
+    
+    .menu-btn{display:none;background:none;border:0}
+    @media(max-width:800px){
+      nav ul{display:none}
+      .menu-btn{display:block}
+    }
+    
+    .hero{padding:48px 0}
+    .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero h1{margin:0;font-size:2rem}
+    .hero p{color:var(--muted);margin-top:10px}
+    .hero .btn-row{margin-top:18px}
+    .hero img{width:100%;border-radius:12px;display:block}
+    
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero h1{font-size:1.6rem}
+    }
+    
+    section{padding:32px 0}
+    .cards{display:flex;gap:16px;flex-wrap:wrap}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 10px rgba(2,6,23,0.04);flex:1;min-width:220px}
+    .card h3{margin:6px 0}
+    .muted{color:var(--muted)}
+    
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery img{width:100%;border-radius:10px;display:block}
+    @media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    
+    input,textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+    button[type=submit]{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    
+    #contacto form label{display:block;margin-bottom:16px}
+    #contacto input[type="email"],
+    #contacto textarea{width:350px;min-height:40px;height:40px;resize:vertical;margin-top:6px}
+    
+    footer{padding:18px 0;color:var(--muted);font-size:14px}
+    
+    @media(max-width:700px){
+      .cards{flex-direction:column}
+      .card{width:100%}
+      #contacto input[type="email"],
+      #contacto textarea{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+<div id="sfcqnaqxqtnx3p5ukapgpj7qzenwtg6wlke"></div><script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=qnaqxqtnx3p5ukapgpj7qzenwtg6wlke&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contadores de visitas gratis"><img src="https://counter1.optistats.ovh/private/contadorvisitasgratis.php?c=qnaqxqtnx3p5ukapgpj7qzenwtg6wlke" border="0" title="contadores de visitas gratis" alt="contadores de visitas gratis"></a></noscript>      <div class="logo">
+        <span class="mark">KE</span>
+        <span>electronica KE</span>
+      </div>
+      <nav aria-label="Navegación principal">
+        <button class="menu-btn" aria-controls="menu" aria-expanded="false" id="menuBtn">☰</button>
+        <ul id="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contacto">Contáctanos</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Bienvenido a <strong>KenEdu Studio</strong></h1>
+          <p class="muted">Servicios en electrónica y computación</p>
+          <div class="btn-row">
+            <a class="cta" href="#servicios">Ver servicios</a>
+            <a style="margin-left:10px;text-decoration:none;color:var(--muted);font-weight:700" href="#galeria">Ver galería</a>
+          </div>
+        </div>
+        <div>
+          <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_1280.png" alt="Imagen principal">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="cards" style="margin-top:16px">
+          <article class="card">
+            <div style="font-size:28px">🔧</div>
+            <h3>Soporte técnico</h3>
+            <p class="muted">Diagnóstico y resolución de fallos en computadoras y dispositivos.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🧹</div>
+            <h3>Limpieza y Optimización</h3>
+            <p class="muted">Limpieza física de equipos y optimización del sistema.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">⚙️</div>
+            <h3>Mantenimiento y Reparación</h3>
+            <p class="muted">Reparación de hardware y reemplazo de piezas defectuosas.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🔄</div>
+            <h3>Recuperación de Datos</h3>
+            <p class="muted">Rescate de archivos eliminados o perdidos.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🛠️</div>
+            <h3>Ensamblaje de PCs</h3>
+            <p class="muted">Armado de computadoras personalizadas según necesidad.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🌐</div>
+            <h3>Configuración de Redes</h3>
+            <p class="muted">Instalación y configuración de redes WiFi y LAN.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🔒</div>
+            <h3>Seguridad Digital</h3>
+            <p class="muted">Instalación de antivirus y eliminación de amenazas.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">💻</div>
+            <h3>Formateo y Restauración</h3>
+            <p class="muted">Formateo completo e instalación limpia del sistema.</p>
+          </article>
+          <article class="card">
+            <div style="font-size:28px">🧠</div>
+            <h3>Asesoría Tecnológica</h3>
+            <p class="muted">Guía para compra de equipos y evaluación técnica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <h2>Galería</h2>
+        <div class="gallery" style="margin-top:12px">
+          <img src="https://tecnorefacciones.com/wp-content/uploads/2023/05/diagnostico-de-laptop-1024x685.png" alt="Diagnóstico">
+          <img src="https://img.pccomponentes.com/pcblog/9171/limpiar-polvo-ordenador.jpg" alt="Limpieza">
+          <img src="https://i.ytimg.com/vi/H1qnB7a8I1g/maxresdefault.jpg" alt="Reparación">
+          <img src="https://www.grupocibernos.com/hubfs/El%20papel%20de%20los%20empleados%20en%20la%20seguridad%20inform%C3%A1tica.webp" alt="Seguridad">
+          <img src="https://wallpapers.com/images/featured/electronica-1ovz9er6jk6otp61.jpg" alt="Hosting">
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xnngvgwj" method="POST" id="contactForm" style="max-width:350px;margin:0 auto">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required style="margin-bottom:12px">
+          <textarea name="message" placeholder="Tu mensaje" required style="margin-bottom:12px;resize:vertical;min-height:80px"></textarea>
+          <button type="submit" style="width:100%">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;flex-direction:column;gap:20px;text-align:center">
+      <div style="border-top:1px solid #ccc;padding-top:20px">
+        <p style="margin:0;font-weight:600">KenEdu Studio - Soluciones en Electrónica</p>
+        <p style="margin:5px 0;color:var(--muted);font-size:13px">Reparación, mantenimiento y asesoría técnica profesional</p>
+      </div>
+      <div style="font-size:13px">
+        <p style="margin:0">© 2025 KenEdu Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    menuBtn && menuBtn.addEventListener('click', ()=>{
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+      menu.style.flexDirection = 'column';
+      menu.style.gap = '12px';
+      menu.style.background = 'white';
+      menu.style.padding = '10px';
+      menu.style.borderRadius = '8px';
+      menu.style.position = 'absolute';
+      menu.style.right = '20px';
+      menu.style.top = '64px';
+      menu.style.boxShadow = '0 6px 18px rgba(2,6,23,0.08)';
+    });
+
+    function handleSubmit(e){
+      const email = document.querySelector('#contacto input[type="email"]').value.trim();
+      const message = document.querySelector('#contacto textarea').value.trim();
+      
+      if(!email){
+        e.preventDefault();
+        alert('Por favor, ingresa tu dirección de correo electrónico.');
+        return;
+      }
+      
+      if(message.length < 4){
+        e.preventDefault();
+        alert('Por favor, ingresa un mensaje con al menos 4 caracteres.');
+        return;
+      }
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if(contactForm){
+      contactForm.addEventListener('submit', handleSubmit);
+    }
+  </script>
+
+</body>
+</html>
+
+
